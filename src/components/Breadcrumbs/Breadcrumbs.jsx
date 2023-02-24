@@ -8,7 +8,7 @@ export default function Breadcrumbs(props){
     let breadcrumb = '';
     return (
         <div className={styles.breadcrumbs}>
-            home /
+            <Link to="/">home /</Link>
             {paths.map((path, index) => {
                 breadcrumb += '/' + path;
                 if (index === paths.length - 1) {
